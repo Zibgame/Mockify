@@ -1,0 +1,114 @@
+You must apply the provided texture onto the provided mockup.
+
+The goal is to preserve the ORIGINAL artwork exactly while integrating it naturally onto the product surface.
+
+IMPORTANT:
+Use the mockup as the primary base image.
+Only replace the printable surface.
+
+Do NOT recreate, redraw, reinterpret, restyle, regenerate, enhance, simplify, vectorize, or artistically modify the artwork in any way.
+
+Use the provided texture EXACTLY AS-IS.
+
+The artwork must remain visually identical to the source texture.
+
+STRICT TEXTURE PRESERVATION:
+
+Preserve EXACT:
+• colors
+• saturation
+• contrast
+• detail density
+• pattern scale
+• line thickness
+• spacing
+• proportions
+• micro details
+• tiny elements
+• sharpness
+• texture placement
+
+Do not:
+• enlarge elements
+• shrink elements
+• clean up details
+• simplify shapes
+• make the design cartoonish
+• make the artwork softer
+• make the artwork cuter
+• reinterpret the illustration style
+• change plaid proportions
+• alter small decorative details
+
+Maintain pixel-accurate fidelity to the original texture.
+
+The final result must look like the ORIGINAL artwork physically printed onto the product.
+
+NOT a newly generated variation.
+
+MOCKUP INTEGRATION:
+
+Respect perfectly:
+• perspective
+• lighting
+• shadows
+• depth
+• curves
+• folds
+• borders
+• surface texture
+• material reflections
+
+The texture must naturally follow the product shape and perspective.
+
+No flat overlay.
+No sticker effect.
+No floating texture effect.
+
+Preserve the original mockup realism.
+
+Do not modify:
+• background
+• props
+• non-printable areas
+• scene lighting
+
+PLACEMENT:
+
+The texture must fully cover the printable area only.
+
+No overflow outside the printable surface.
+
+Respect exact physical boundaries and contours.
+
+Correctly orient the texture to match the product angle and perspective.
+
+If needed, adapt the texture minimally to fit the mockup proportions WITHOUT visible distortion and WITHOUT changing artwork scale.
+
+STYLE:
+
+Photorealistic
+
+High-resolution
+
+Commercial product photography
+
+Natural lighting
+
+Sharp focus
+
+Factory-printed appearance
+
+Natural material integration
+
+Slightly enhance saturation ONLY IF necessary while preserving original colors exactly.
+
+Do not desaturate the artwork.
+
+Do not change color balance.
+
+Keep identical colors in identical locations, including very small details.
+
+IMPORTANT FINAL RULE:
+
+This is a texture transfer task, NOT an artwork generation task.
