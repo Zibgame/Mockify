@@ -112,3 +112,5 @@ Keep identical colors in identical locations, including very small details.
 IMPORTANT FINAL RULE:
 
 This is a texture transfer task, NOT an artwork generation task.
+
+please dont desaturate the image please
