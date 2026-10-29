@@ -1313,7 +1313,7 @@ def print_run_header(texture_path: Path, mockups: list, threads: int) -> None:
     line  = "─" * width
     print()
     print(f"  {c(C.BOLD + C.MAGENTA, '╔' + '═' * width + '╗')}")
-    print(f"  {c(C.BOLD + C.MAGENTA, '║')}  {c(C.BOLD + C.WHITE, 'MOCKIFY  —  Kindle Case Mockup Generator'):<{width - 2}}{c(C.BOLD + C.MAGENTA, '║')}")
+    print(f"  {c(C.BOLD + C.MAGENTA, '║')}  {c(C.BOLD + C.WHITE, 'MOCKIFY  —  Product Mockup Generator'):<{width - 2}}{c(C.BOLD + C.MAGENTA, '║')}")
     print(f"  {c(C.BOLD + C.MAGENTA, '╚' + '═' * width + '╝')}")
     print()
     print(f"  {c(C.GREY, 'Texture')}   {c(C.CYAN, str(texture_path.name))}  {c(C.GREY, get_file_size(texture_path))}")
@@ -1632,7 +1632,7 @@ def run_multi_mode() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate Kindle mockups with optional parallel API calls."
+        description="Generate product mockups with optional parallel API calls."
     )
     parser.add_argument(
         "texture",

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/mockify-banner.svg" alt="Mockify — Kindle Mockup Studio" width="100%">
+  <img src="docs/mockify-banner.svg" alt="Mockify — Product Mockup Engine" width="100%">
 
   <br>
 
@@ -8,29 +8,32 @@
   <img alt="CLI" src="https://img.shields.io/badge/interface-CLI-8b5cf6">
   <img alt="Windows ready" src="https://img.shields.io/badge/Windows-ready-0078D4?logo=windows11&logoColor=white">
 
-  <p><strong>Transformez une texture en une collection cohérente de mockups Kindle.</strong></p>
-  <p>Génération parallèle, contrôle qualité, planches multi-design et exports organisés.</p>
+  <p><strong>Un moteur de production visuelle réutilisable pour toutes vos boutiques.</strong></p>
+  <p>Chaque fork adapte les mockups, les prompts et le workflow à une gamme de produits.</p>
 </div>
 
 ---
 
 ## Présentation
 
-Mockify est un studio en ligne de commande conçu pour produire des visuels de coques Kindle à partir d’une texture. Il orchestre la génération d’images, le contrôle qualité, les nouvelles tentatives et l’organisation des exports dans un workflow unique.
+Mockify est un moteur en ligne de commande conçu pour industrialiser la création de visuels produit. Le dépôt sert de base commune : chaque boutique peut disposer de son propre fork avec ses mockups, ses prompts, ses règles de contrôle qualité et ses formats de sortie.
+
+Cette instance contient actuellement un **preset Kindle**. Kindle est donc l’exemple fonctionnel livré dans ce dépôt, pas la limite du projet. La même architecture peut être adaptée à des tapis de jeu, vêtements, accessoires, impressions ou autres catalogues.
 
 Le projet propose deux parcours :
 
 | Mode | Usage | Résultats |
 | --- | --- | --- |
-| **Single** | Appliquer une texture aux mockups sélectionnés | `basic`, `double`, `open`, `clear` |
-| **Multi** | Créer ou utiliser une planche de 9 designs | planche, `multi`, `choice` |
+| **Single** | Appliquer un design aux mockups du preset actif | actuellement `basic`, `double`, `open`, `clear` |
+| **Multi** | Créer ou utiliser une planche de plusieurs designs | actuellement planche 3 × 3, `multi`, `choice` |
 
 ## Points forts
 
 - **Parallélisme automatique** — un worker par mockup sélectionné, avec une limite de 8.
 - **Contrôle qualité intégré** — analyse visuelle et nouvelle tentative automatique en mode parallèle.
 - **Exports propres** — un dossier horodaté par exécution et des noms de fichiers normalisés.
-- **Workflow multi-design** — génération d’une planche 3 × 3 puis application sur deux présentations commerciales.
+- **Architecture par boutique** — les assets et règles métier peuvent évoluer indépendamment dans chaque fork.
+- **Workflow multi-design** — génération d’une planche puis application sur les présentations commerciales du preset.
 - **Suivi des coûts** — utilisation réelle lorsqu’elle est disponible, sinon estimation clairement indiquée.
 - **Archivage sécurisé** — création d’un ZIP, vérification CRC, puis suppression des seuls dossiers archivés.
 - **Tests hors ligne** — la suite de tests ne contacte aucune API et ne consomme aucun crédit.
@@ -40,8 +43,8 @@ Le projet propose deux parcours :
 ```mermaid
 flowchart LR
     A[Texture ou planche] --> B{Mode}
-    B -->|Single| C[Sélection des mockups]
-    B -->|Multi| D[Planche de 9 designs]
+    B -->|Single| C[Mockups du preset boutique]
+    B -->|Multi| D[Planche multi-design]
     C --> E[Génération parallèle]
     D --> F[Multi / Choice]
     E --> G[Contrôle qualité]
@@ -82,6 +85,8 @@ OPENAI_API_KEY=sk-...
 > Le fichier `.env` est ignoré par Git. Ne publiez jamais votre clé API.
 
 ## Démarrage rapide
+
+Les exemples ci-dessous utilisent le preset Kindle actuellement fourni. Un autre fork conserve les mêmes commandes mais remplace les assets et les recettes par ceux de sa boutique.
 
 ### Générer des mockups depuis une texture
 
@@ -198,6 +203,19 @@ Mockify/
 ├── .env                 # secrets locaux, ignorés par Git
 └── requirements.txt
 ```
+
+## Créer un fork pour une autre boutique
+
+Le code d’orchestration peut rester commun. Les éléments spécifiques à la boutique doivent rester isolés dans son fork :
+
+1. remplacez les images de `assets/mockups/` par les modèles du produit ;
+2. rédigez des prompts dédiés dans `assets/prompts/` au lieu de reprendre ceux d’une autre boutique ;
+3. adaptez `ALL_MOCKUPS`, `MOCKUP_LABELS` et les recettes concernées dans `src/main.py` ;
+4. ajustez le contrôle qualité aux défauts propres au produit ;
+5. ajoutez des tests correspondant aux nouveaux formats et masques ;
+6. conservez la gestion commune des threads, dossiers, noms et archives.
+
+Cette séparation évite qu’un prompt ou une règle métier d’une boutique contamine le workflow d’une autre.
 
 ## Dépannage
 
