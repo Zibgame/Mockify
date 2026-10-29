@@ -1,0 +1,23 @@
+Generate a clean, professional design board for Kindle case patterns.
+
+BACKGROUND — STRICT:
+The entire canvas background must be fully transparent (alpha channel). Do NOT use a white, colored, textured, or paper background. Export as a PNG with transparency preserved.
+
+LAYOUT:
+Display 9 designs arranged in a clean 3×3 grid with even spacing between each cell.
+
+CELL SHAPE — STRICT:
+Each of the 9 cells MUST be a tall RECTANGLE (portrait orientation), matching the proportions of a Kindle e-reader case — approximately a 3:4 width-to-height ratio (taller than wide). Do NOT make the cells square. Do NOT make them landscape. Every one of the 9 cells must share this exact same tall rectangular shape and size.
+
+DESIGN REQUIREMENTS:
+Each of the 9 designs should be a complete, tileable-feeling surface pattern suitable for printing on a fabric Kindle case (think: small repeating motifs, soft illustration style, balanced colors, no harsh gradients, no photorealistic 3D rendering).
+
+Keep every design flat, evenly lit, and print-ready — no shadows, no mockup elements, no fabric texture simulation. Just the raw artwork for each of the 9 cells.
+
+Vary the 9 designs so they feel like a cohesive product collection (consistent quality and finish) while each remaining visually distinct from the others.
+
+STYLE:
+Premium Etsy product collection presentation, clean spacing, high-end stationery and fabric print aesthetic, crisp edges, professional surface pattern design board.
+
+OUTPUT:
+Transparent PNG with the background fully removed and only the 9 rectangular pattern panels visible.

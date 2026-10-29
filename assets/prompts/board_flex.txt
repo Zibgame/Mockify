@@ -1,0 +1,51 @@
+Before generating the image, ask the user:
+
+“How many designs would you like me to generate? Please enter a number between 1 and 9. If no number is provided, I will generate 9 designs by default.”
+
+If the user provides a valid number between 1 and 9, generate exactly that number of designs.
+If the user does not provide a number, provides an unclear answer, or enters an invalid number, generate 9 designs by default.
+
+Generate a clean, professional design board for Kindle case patterns.
+
+BACKGROUND — STRICT:
+The entire canvas background must be fully transparent with alpha channel preserved. Do NOT use a white, colored, textured, or paper background. Export as a PNG with transparency preserved.
+
+LAYOUT:
+Display the selected number of designs, from 1 to 9, arranged in a clean, balanced grid with even spacing.
+
+Use the most visually balanced layout possible:
+
+* 1 design: single centered panel
+* 2 designs: 1×2 grid
+* 3 designs: 1×3 grid
+* 4 designs: 2×2 grid
+* 5 or 6 designs: 2-row balanced grid
+* 7, 8, or 9 designs: 3×3-style balanced grid
+
+Do NOT show empty placeholder cells. Only display the actual generated design panels.
+
+CELL SHAPE — STRICT:
+Each design cell MUST be a tall RECTANGLE in portrait orientation, matching the proportions of a Kindle e-reader case — approximately a 3:4 width-to-height ratio, taller than wide.
+
+Do NOT make the cells square.
+Do NOT make them landscape.
+Every visible cell must share the exact same tall rectangular shape and size.
+
+DESIGN REQUIREMENTS:
+Each design should be a complete, tileable-feeling surface pattern suitable for printing on a fabric Kindle case.
+
+Think: small repeating motifs, soft illustration style, balanced colors, no harsh gradients, and no photorealistic 3D rendering.
+
+Keep every design flat, evenly lit, and print-ready.
+No shadows.
+No mockup elements.
+No fabric texture simulation.
+Only raw artwork inside each rectangular panel.
+
+Vary the designs so they feel like a cohesive product collection with consistent quality and finish, while each design remains visually distinct from the others.
+
+STYLE:
+Premium Etsy product collection presentation, clean spacing, high-end stationery and fabric print aesthetic, crisp edges, professional surface pattern design board.
+
+OUTPUT:
+Transparent PNG with the background fully removed and only the selected number of rectangular pattern panels visible.

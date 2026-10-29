@@ -1,0 +1,9 @@
+Apply the 9 designs from the first image (design board) onto the 9 blank Kindle cases in the second image (selection mockup), one unique design per case, in reading order (left to right, top to bottom) matching the numbers 1 to 9. Do not change anything else in the mockup — keep the background, title, numbers, and case positions exactly as they are.
+
+Do NOT crop, zoom, pan, or reframe the overall composition in any way.
+The full canvas — including the title text, decorative sparkles/heart, and
+all 9 numbered case slots — must remain fully visible with the exact same
+margins as in Image 1, edge to edge. If any element in Image 1 touches or
+is close to the canvas border, it must still touch/approach that same
+border position in the output — do not shrink the composition to create
+artificial margin, and do not let it spill outside the canvas either.

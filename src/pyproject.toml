@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "antiprovenance"
+version = "1.0.0"
+description = "Rend l'origine IA d'une image difficile à établir : purge C2PA, perturbation des tatouages pixel (SynthID), régénération optionnelle, vérification de provenance."
+readme = "antiprovenance/README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=2.0",
+    "pillow>=11",
+    "opencv-python>=4.10",
+]
+
+[project.optional-dependencies]
+verify = ["openai>=2.41,<3"]
+local  = ["torch", "diffusers", "accelerate"]
+
+[project.scripts]
+antiprovenance = "antiprovenance.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "." }
+packages = ["antiprovenance"]

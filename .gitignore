@@ -1,1 +1,17 @@
 .env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Generated images
+outputs/
+
+# Personal input images / textures
+assets/textures/
+
+# Local mockup drafts (not used by the application)
+assets/mockups/_basic.png
+assets/mockups/d.png

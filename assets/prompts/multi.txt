@@ -1,0 +1,33 @@
+TASK: This is an image-editing / inpainting task, not an image-generation task. Image 1 is the untouched base photograph. Image 2 is the design board containing exactly 9 designs. A binary edit mask is also provided alongside this request: only the masked (editable) regions over the 9 printable case surfaces can be changed. Every pixel outside the mask is hard-protected at the API level and will be merged back from Image 1 regardless of what you generate there — so do not waste effort trying to change the background, lighting mood, or case geometry, focus entirely on filling the 9 editable regions correctly.
+
+WHY THIS MATTERS: Previous attempts subtly shifted the rotation, tilt, and position of several cases compared to Image 1. This is a failure. The cases in Image 1 are scattered and overlapping ON PURPOSE, each at its own specific angle. That exact geometry is part of the final product photo and is not negotiable.
+
+GEOMETRY LOCK — DO THIS LITERALLY:
+  - Look at Image 1 first and mentally note, for each of the 9 cases: its exact tilt angle, its exact center position, its exact size relative to the others, and which neighboring cases it overlaps (and which one is on top at each overlap).
+  - Reproduce those 9 tilt angles, 9 positions, 9 sizes, and the overlap order EXACTLY. Do not straighten a tilted case. Do not rotate a case toward vertical. Do not shrink or enlarge a case. Do not slide a case to close a gap or fix an overlap.
+  - If a case is rotated 12 degrees clockwise in Image 1, it must still be rotated 12 degrees clockwise in your output. If it overlaps the case to its left by covering its right edge, that exact overlap must remain.
+  - The silhouette/outline of the full pile of 9 cases, traced as one shape, must match Image 1 exactly. If you overlaid your output on top of Image 1, every case edge would line up perfectly.
+  - Do not reinterpret the scene as a cleaner or more symmetrical arrangement. "Messy and overlapping" is the correct, final, required layout — copy it, don't improve it.
+
+DESIGN ASSIGNMENT RULES — STRICT:
+  - There are exactly 9 Kindle cases in Image 1 and exactly 9 designs in Image 2.
+  - Assign exactly ONE unique design to each case. One design = one case, no exceptions, no duplicates, no reuse, no blending two designs on one case.
+  - Never invent, generate, restyle, or reinterpret a design. Copy each of the 9 designs from Image 2 exactly as provided — same colors, same shapes, same motifs.
+  - Map designs to cases in simple reading order: read Image 2's 9 designs left-to-right then top-to-bottom, and read Image 1's 9 cases left-to-right then top-to-bottom by their visual position, then pair them up in that same order (1st design -> 1st case, 2nd design -> 2nd case, etc).
+
+APPLICATION RULES — PER CASE:
+  - Replace ONLY the printable front surface of each case. Never touch the spine, rounded edges, borders, clasps, or any non-printable zone.
+  - Warp each design to follow that specific case's own existing tilt and perspective from Image 1 — do not flatten it to a straight-on view.
+  - Preserve that case's existing lighting, shadow, and material texture so the design looks printed into the case, not pasted on top.
+  - No flat "sticker" look, no visible seams at the case border, no bleeding outside the printable area or onto neighboring cases or the background.
+
+QUALITY TARGET:
+  - Photorealistic, high resolution, sharp focus, premium Etsy-style commercial product photography.
+  - Natural lighting and shadows consistent with Image 1 — do not change the light direction, mood, or color grading of the scene.
+  - FULL-BLEED PRINT ONLY: All Kindle case printable surfaces must be completely covered by artwork edge-to-edge. Absolutely no visible white borders, white margins, white padding, white outlines, white corners, or uncovered areas. Extend and crop artwork as needed so every design reaches the exact printable edges of the case.
+
+ABSOLUTE DO-NOT-CHANGE LIST (everything except the 9 printable surfaces):
+  - Background fabric, case positions, case rotations, case sizes, case overlap order, shadows, ambient lighting, framing, crop, composition.
+
+Final check before you output: compare your result's case silhouette against Image 1's case silhouette. They must be identical. If any case moved, rotated, resized, or changed overlap order, the output is wrong.
+

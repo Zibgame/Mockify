@@ -1,0 +1,11 @@
+# Core runtime
+openai
+Pillow
+numpy
+opencv-python            # required by the antiprovenance pixel layer
+
+# Optional — only needed for the "local" regeneration backend
+# (MOCKIFY_REGENERATE=local), which is the only real lever against SynthID:
+# torch
+# diffusers
+# accelerate

@@ -85,6 +85,13 @@ Correctly orient the texture to match the product angle and perspective.
 
 If needed, adapt the texture minimally to fit the mockup proportions WITHOUT visible distortion and WITHOUT changing artwork scale.
 
+EDGE-TO-EDGE COVERAGE — NO WHITE BORDERS:
+The artwork must extend completely edge-to-edge across the entire visible outer surface of the Kindle case, all the way to the exact physical perimeter and contours.
+ZERO white border, ZERO white margin, ZERO unprinted strip, ZERO blank edge, ZERO exposed base material anywhere around the perimeter.
+Wrap and crop the texture naturally at the physical edges of the case so the printed design reaches every boundary perfectly.
+Do not create a white outline or safety margin between the artwork and the edge of the Kindle case.
+The case must appear fully factory-printed from edge to edge, with the artwork precisely following every rounded corner, curve, contour, and boundary.
+
 STYLE:
 
 Photorealistic
