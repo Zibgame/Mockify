@@ -1,56 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title description">
-  <title id="title">Mockify — Product Mockup Studio</title>
-  <desc id="description">Bannière violette présentant une texture transformée en plusieurs visuels produit.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Mockify — Product Mockup Engine</title>
+  <desc id="description">Un moteur visuel central transforme un design en plusieurs mockups destinés à différentes boutiques.</desc>
+
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#17112d"/>
-      <stop offset="0.52" stop-color="#442080"/>
-      <stop offset="1" stop-color="#8a3ffc"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.52" stop-color="#312064"/>
+      <stop offset="1" stop-color="#6d28d9"/>
     </linearGradient>
-    <linearGradient id="art" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffb6d9"/>
-      <stop offset="0.5" stop-color="#ffda79"/>
-      <stop offset="1" stop-color="#8ff0dc"/>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="0.5" stop-color="#f0abfc"/>
+      <stop offset="1" stop-color="#67e8f9"/>
     </linearGradient>
-    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0b0718" flood-opacity="0.38"/>
-    </filter>
-    <pattern id="pattern" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
-      <rect width="28" height="28" fill="url(#art)"/>
-      <circle cx="7" cy="7" r="4" fill="#ffffff" fill-opacity="0.62"/>
-      <path d="M14 28L28 14" stroke="#6e3bd1" stroke-opacity="0.28" stroke-width="5"/>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <pattern id="art" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="24" height="24" fill="url(#brand)"/>
+      <circle cx="5" cy="5" r="3" fill="#ffffff" fill-opacity="0.65"/>
+      <path d="M12 24L24 12" stroke="#6d28d9" stroke-opacity="0.32" stroke-width="4"/>
     </pattern>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#050814" flood-opacity="0.42"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
   </defs>
 
-  <rect width="1200" height="340" rx="28" fill="url(#background)"/>
-  <circle cx="1080" cy="35" r="180" fill="#ffffff" fill-opacity="0.05"/>
-  <circle cx="930" cy="335" r="145" fill="#ffb6d9" fill-opacity="0.07"/>
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <circle cx="1090" cy="20" r="190" fill="#ffffff" fill-opacity="0.04"/>
+  <circle cx="750" cy="370" r="200" fill="#d946ef" fill-opacity="0.06"/>
+  <path d="M0 295C220 235 350 355 590 295S970 240 1200 300V360H0Z" fill="#ffffff" fill-opacity="0.025"/>
 
-  <g transform="translate(76 70)">
-    <rect x="0" y="0" width="58" height="58" rx="16" fill="#ffffff" fill-opacity="0.14"/>
-    <path d="M15 40V18h8l7 11 7-11h8v22h-8V29l-7 10-7-10v11z" fill="#ffffff"/>
-    <text x="0" y="113" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="58" font-weight="750" letter-spacing="-2">Mockify</text>
-    <text x="2" y="150" fill="#e8ddff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="500">PRODUCT MOCKUP ENGINE</text>
-    <text x="2" y="194" fill="#ffffff" fill-opacity="0.76" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Un moteur · Plusieurs boutiques · Des workflows dédiés</text>
+  <g transform="translate(70 66)">
+    <g>
+      <rect width="62" height="62" rx="18" fill="url(#brand)"/>
+      <path d="M15 43V19h9l7 11 7-11h9v24h-9V30l-7 11-7-11v13z" fill="#19132f"/>
+    </g>
+    <text x="0" y="126" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="62" font-weight="760" letter-spacing="-2.5">Mockify</text>
+    <text x="2" y="165" fill="#d8cfff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="650" letter-spacing="2.2">PRODUCT MOCKUP ENGINE</text>
+    <text x="2" y="208" fill="#ffffff" fill-opacity="0.76" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Un socle commun. Un fork par boutique.</text>
+    <g transform="translate(2 230)" fill="#ffffff" fill-opacity="0.76" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">
+      <rect width="94" height="30" rx="15" fill="#ffffff" fill-opacity="0.09"/>
+      <text x="17" y="20">AUTOMATE</text>
+      <rect x="104" width="78" height="30" rx="15" fill="#ffffff" fill-opacity="0.09"/>
+      <text x="121" y="20">CHECK</text>
+      <rect x="192" width="80" height="30" rx="15" fill="#ffffff" fill-opacity="0.09"/>
+      <text x="210" y="20">EXPORT</text>
+    </g>
   </g>
 
-  <g transform="translate(690 40)" filter="url(#shadow)">
-    <g transform="translate(0 40) rotate(-8 90 120)">
-      <rect width="180" height="240" rx="22" fill="#f7f3ff"/>
-      <rect x="12" y="12" width="156" height="216" rx="14" fill="url(#pattern)"/>
-      <circle cx="90" cy="219" r="3" fill="#4b3771" fill-opacity="0.6"/>
+  <g transform="translate(560 35)">
+    <circle cx="270" cy="145" r="94" fill="#a78bfa" fill-opacity="0.16" filter="url(#glow)"/>
+
+    <g stroke="#c4b5fd" stroke-opacity="0.42" stroke-width="2" fill="none">
+      <path d="M128 82C175 82 190 116 216 132"/>
+      <path d="M128 248C175 248 190 185 216 164"/>
+      <path d="M325 145C370 145 386 78 417 78"/>
+      <path d="M325 145C370 145 386 230 417 230"/>
     </g>
-    <g transform="translate(160 10) rotate(4 90 120)">
-      <rect width="180" height="240" rx="22" fill="#ffffff"/>
-      <rect x="12" y="12" width="156" height="216" rx="14" fill="url(#pattern)"/>
-      <path d="M55 72c26-32 72-18 72 19 0 33-37 52-55 65-18-13-55-32-55-65 0-19 13-31 30-31 9 0 17 4 23 12z" fill="#ffffff" fill-opacity="0.72"/>
-      <circle cx="90" cy="219" r="3" fill="#4b3771" fill-opacity="0.6"/>
+    <g fill="#c4b5fd">
+      <circle cx="216" cy="132" r="4"/>
+      <circle cx="216" cy="164" r="4"/>
+      <circle cx="417" cy="78" r="4"/>
+      <circle cx="417" cy="230" r="4"/>
     </g>
-    <g transform="translate(325 48) rotate(9 90 120)">
-      <rect width="180" height="240" rx="22" fill="#f7f3ff"/>
-      <rect x="12" y="12" width="156" height="216" rx="14" fill="url(#pattern)"/>
-      <path d="M48 45h84v104H48z" fill="none" stroke="#ffffff" stroke-opacity="0.72" stroke-width="5"/>
-      <circle cx="90" cy="219" r="3" fill="#4b3771" fill-opacity="0.6"/>
+
+    <!-- Input design -->
+    <g transform="translate(10 35)" filter="url(#shadow)">
+      <rect width="118" height="94" rx="18" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.18"/>
+      <rect x="13" y="13" width="92" height="68" rx="11" fill="url(#art)"/>
+      <rect x="38" y="84" width="42" height="4" rx="2" fill="#ffffff" fill-opacity="0.32"/>
+    </g>
+    <g transform="translate(10 201)" filter="url(#shadow)">
+      <rect width="118" height="94" rx="18" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.18"/>
+      <circle cx="37" cy="45" r="22" fill="#67e8f9" fill-opacity="0.85"/>
+      <circle cx="64" cy="45" r="22" fill="#f0abfc" fill-opacity="0.78"/>
+      <circle cx="87" cy="45" r="22" fill="#fde68a" fill-opacity="0.8"/>
+      <text x="59" y="84" text-anchor="middle" fill="#ffffff" fill-opacity="0.6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">BRAND KIT</text>
+    </g>
+
+    <!-- Engine -->
+    <g transform="translate(210 87)" filter="url(#shadow)">
+      <rect width="120" height="120" rx="34" fill="#ffffff" fill-opacity="0.13" stroke="#ffffff" stroke-opacity="0.28"/>
+      <rect x="17" y="17" width="86" height="86" rx="26" fill="url(#brand)"/>
+      <path d="M37 78V42h12l11 17 11-17h12v36H71V59L60 76 49 59v19z" fill="#19132f"/>
+    </g>
+
+    <!-- Product outputs -->
+    <g transform="translate(417 15)" filter="url(#shadow)">
+      <rect width="145" height="126" rx="20" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.18"/>
+      <path d="M46 30h53l15 24-13 11-8-10v48H52V55l-8 10-13-11z" fill="url(#art)"/>
+      <text x="72" y="118" text-anchor="middle" fill="#ffffff" fill-opacity="0.64" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">SHOP A</text>
+    </g>
+    <g transform="translate(417 167)" filter="url(#shadow)">
+      <rect width="145" height="126" rx="20" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.18"/>
+      <path d="M42 37h61l8 15-8 53H42l-8-53z" fill="url(#art)"/>
+      <path d="M56 38c0-22 33-22 33 0" fill="none" stroke="#ffffff" stroke-opacity="0.78" stroke-width="6"/>
+      <text x="72" y="118" text-anchor="middle" fill="#ffffff" fill-opacity="0.64" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">SHOP B</text>
     </g>
   </g>
 </svg>
