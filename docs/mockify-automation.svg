@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Mockify — Automatisation visuelle</title>
+  <desc id="description">Bannière sombre et épurée présentant un pipeline automatisé de génération, validation et export.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b16"/>
+      <stop offset="0.52" stop-color="#11152a"/>
+      <stop offset="1" stop-color="#28134f"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.52" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.55" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#00030a" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="26" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="26" fill="url(#grid)"/>
+  <ellipse cx="880" cy="165" rx="330" ry="230" fill="url(#halo)"/>
+  <path d="M0 280C225 240 355 324 560 280S955 245 1200 288V320H0Z" fill="#ffffff" fill-opacity="0.018"/>
+
+  <!-- Identity -->
+  <g transform="translate(68 54)">
+    <g filter="url(#shadow)">
+      <rect width="58" height="58" rx="17" fill="url(#brand)"/>
+      <path d="M14 41V17h9l6 11 7-11h9v24h-9V28l-7 12-7-12v13z" fill="#0d1020"/>
+    </g>
+    <circle cx="52" cy="7" r="5" fill="#4ade80" stroke="#0d1020" stroke-width="3"/>
+
+    <text x="0" y="122" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">Mockify</text>
+    <text x="2" y="158" fill="#c4b5fd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2.7">AUTOMATISATION VISUELLE</text>
+    <text x="2" y="199" fill="#ffffff" fill-opacity="0.62" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Générez. Validez. Exportez.</text>
+
+    <g transform="translate(2 220)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="650">
+      <circle cx="6" cy="6" r="5" fill="#4ade80"/>
+      <text x="19" y="10" fill="#ffffff" fill-opacity="0.68">PIPELINE ACTIF</text>
+      <text x="125" y="10" fill="#ffffff" fill-opacity="0.28">•</text>
+      <text x="141" y="10" fill="#ffffff" fill-opacity="0.68">JUSQU’À 8 WORKERS</text>
+    </g>
+  </g>
+
+  <!-- Automation flow -->
+  <g transform="translate(520 49)" filter="url(#shadow)">
+    <rect width="620" height="222" rx="25" fill="#ffffff" fill-opacity="0.055" stroke="#ffffff" stroke-opacity="0.11"/>
+    <circle cx="24" cy="22" r="3.5" fill="#fb7185"/>
+    <circle cx="38" cy="22" r="3.5" fill="#facc15"/>
+    <circle cx="52" cy="22" r="3.5" fill="#4ade80"/>
+    <text x="76" y="26" fill="#ffffff" fill-opacity="0.42" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">WORKFLOW / PRODUCTION</text>
+    <line x1="0" y1="44" x2="620" y2="44" stroke="#ffffff" stroke-opacity="0.07"/>
+
+    <!-- Flow track -->
+    <path d="M91 117H190M278 117H374M462 117H546" stroke="#ffffff" stroke-opacity="0.09" stroke-width="8" stroke-linecap="round"/>
+    <path d="M91 117H190M278 117H374M462 117H546" stroke="url(#flow)" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#d8b4fe">
+      <path d="M182 111l10 6-10 6z"/>
+      <path d="M366 111l10 6-10 6z"/>
+      <path d="M538 111l10 6-10 6z"/>
+    </g>
+
+    <!-- Input -->
+    <g transform="translate(34 78)">
+      <rect width="78" height="78" rx="22" fill="#8b5cf6" fill-opacity="0.15" stroke="#a78bfa" stroke-opacity="0.38"/>
+      <path d="M25 24h28v29H25z" fill="none" stroke="#ddd6fe" stroke-width="2.4" stroke-linejoin="round"/>
+      <circle cx="33" cy="33" r="3.5" fill="#f0abfc"/>
+      <path d="M27 49l9-9 7 6 6-8 4 5" fill="none" stroke="#67e8f9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="39" y="99" text-anchor="middle" fill="#ffffff" fill-opacity="0.55" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">INPUT</text>
+    </g>
+
+    <!-- Automation engine -->
+    <g transform="translate(194 68)">
+      <rect width="88" height="98" rx="25" fill="#a855f7" fill-opacity="0.15" stroke="#c084fc" stroke-opacity="0.42"/>
+      <circle cx="44" cy="42" r="25" fill="#c084fc" fill-opacity="0.15" stroke="#d8b4fe" stroke-opacity="0.32"/>
+      <path d="M47 20L30 45h13l-3 20 18-28H45z" fill="url(#brand)" filter="url(#glow)"/>
+      <text x="44" y="119" text-anchor="middle" fill="#ffffff" fill-opacity="0.55" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">AUTOMATE</text>
+    </g>
+
+    <!-- Workers -->
+    <g transform="translate(378 68)">
+      <rect width="88" height="98" rx="25" fill="#d946ef" fill-opacity="0.11" stroke="#f0abfc" stroke-opacity="0.32"/>
+      <g transform="translate(18 22)">
+        <rect width="22" height="22" rx="6" fill="#8b5cf6" fill-opacity="0.9"/>
+        <rect x="30" width="22" height="22" rx="6" fill="#c084fc" fill-opacity="0.82"/>
+        <rect y="30" width="22" height="22" rx="6" fill="#d946ef" fill-opacity="0.74"/>
+        <rect x="30" y="30" width="22" height="22" rx="6" fill="#22d3ee" fill-opacity="0.72"/>
+        <g fill="#ffffff" fill-opacity="0.9">
+          <circle cx="11" cy="11" r="2.5"/>
+          <circle cx="41" cy="11" r="2.5"/>
+          <circle cx="11" cy="41" r="2.5"/>
+          <circle cx="41" cy="41" r="2.5"/>
+        </g>
+      </g>
+      <text x="44" y="119" text-anchor="middle" fill="#ffffff" fill-opacity="0.55" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">PARALLEL</text>
+    </g>
+
+    <!-- Quality + export -->
+    <g transform="translate(548 78)">
+      <rect width="78" height="78" rx="22" fill="#22d3ee" fill-opacity="0.1" stroke="#67e8f9" stroke-opacity="0.34"/>
+      <circle cx="39" cy="39" r="23" fill="#4ade80" fill-opacity="0.11" stroke="#4ade80" stroke-opacity="0.4"/>
+      <path d="M28 39l8 8 15-17" fill="none" stroke="#86efac" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="39" y="99" text-anchor="middle" fill="#ffffff" fill-opacity="0.55" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">QC + EXPORT</text>
+    </g>
+
+    <!-- Bottom status -->
+    <g transform="translate(34 188)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">
+      <circle cx="5" cy="4" r="4" fill="#4ade80"/>
+      <text x="16" y="8" fill="#ffffff" fill-opacity="0.48">4 tâches terminées</text>
+      <text x="146" y="8" fill="#ffffff" fill-opacity="0.2">/</text>
+      <text x="159" y="8" fill="#ffffff" fill-opacity="0.48">0 erreur</text>
+      <text x="225" y="8" fill="#ffffff" fill-opacity="0.2">/</text>
+      <text x="238" y="8" fill="#ffffff" fill-opacity="0.48">exports organisés automatiquement</text>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/mockify-banner.svg" alt="Mockify — Product Mockup Engine" width="100%">
+  <img src="docs/mockify-automation.svg" alt="Mockify — Automatisation visuelle" width="100%">
 
   <br>
 
